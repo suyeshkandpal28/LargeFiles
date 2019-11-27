@@ -5,14 +5,14 @@ Pod::Spec.new do |s|
     s.description  = <<-DESC
     An extended description of CerraFramework project.
     DESC
-    s.homepage     = "http://github.com/rewardz/"
+    s.homepage     = "https://github.com/suyeshkandpal28/"
     s.license = { :type => 'Copyright', :text => <<-LICENSE
                    Copyright 2019
                    Permission is granted to only use by Rewardz members...
                   LICENSE
                 }
     s.author             = { "$(git config user.name)" => "$(git config user.email)" }
-    s.source       = { :git => "https://github.com/suyeshkandpal28/LargeFiles.git", :tag => "#{s.version}" }
+    s.source       = { :git => "https://github.com/suyeshkandpal28/LargeFiles.git", :tag => "1.0" }
     s.source_files = "CerraFramework.framework/Headers/*.h"
     s.public_header_files = "CerraFramework.framework/Headers/*.h"
     s.vendored_frameworks = "CerraFramework.framework"
@@ -42,4 +42,6 @@ Pod::Spec.new do |s|
     s.platform = :ios
     s.swift_version = "5.0"
     s.ios.deployment_target  = '10.0'
+    s.frameworks = "Foundation", "UIKit", "AVFoundation", "CoreLocation", "SystemConfiguration"
+    s.requires_arc = true
 end
