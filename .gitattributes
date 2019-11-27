@@ -1,0 +1,2 @@
+CerraFramework.framework filter=lfs diff=lfs merge=lfs -text
+CerraFramework.framework/**/* filter=lfs diff=lfs merge=lfs -text
